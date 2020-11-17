@@ -10,11 +10,10 @@ The repository contains:
 
 ## Changelog from Official
 * Added Event IDs that have been added within the security updates of August 11, 2020 due to CVE-2020-1472, Netlogon Elevation of Privilege Vulnerability
-* Added Event ID 4697 has recommended to detect MITTRE ATT&CK Technique [T1543.003 - Create or Modify System Process: Windows Service](https://attack.mitre.org/techniques/T1543/003/). 
+* Added Event ID 4697, as recommended to detect MITTRE ATT&CK Technique [T1543.003 - Create or Modify System Process: Windows Service](https://attack.mitre.org/techniques/T1543/003/).<BR>
 Security Monitoring recommendation are available from [Microsoft](https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4697#security-monitoring-recommendations)
-* Added Event ID 4768 has recommended to detect MITTRE ATT&CK Technique [T1558.004 - Steal or Forge Kerberos Tickets: AS-REP Roasting](https://attack.mitre.org/techniques/T1558/004/).
+* Added Event ID 4768, as recommended to detect MITTRE ATT&CK Technique [T1558.004 - Steal or Forge Kerberos Tickets: AS-REP Roasting](https://attack.mitre.org/techniques/T1558/004/).<BR>
 Security Monitoring recommendation are available from [Microsoft](https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4768#security-monitoring-recommendations)
-
 
 
 
