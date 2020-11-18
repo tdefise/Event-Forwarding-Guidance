@@ -10,6 +10,7 @@ Lockout events for domain accounts are generated on the domain controller wherea
 
 |   | ID | Level | Event Log | Event Source |
 | --- | --- | --- | --- | --- |
+| A user account was changed | 4738(S) | Information | Security | Microsoft-Windows-Security-Auditing |
 | Account Lockouts | 4740 | Information | Security | Microsoft-Windows-Security-Auditing |
 | Account Login with Explicit Credentials | 4648 | Information | Security | Microsoft-Windows-Security-Auditing |
 | Account Name Changed | 4781 | Information | Security | Microsoft-Windows-Security-Auditing |
@@ -26,6 +27,7 @@ Lockout events for domain accounts are generated on the domain controller wherea
 | New User Account Enabled | 4722 | Information | Security | Microsoft-Windows-Security-Auditing |
 | Password Hash Accessed | 4782 | Information | Security | Microsoft-Windows-Security-Auditing |
 | Password Policy Checking API called | 4793 | Information | Security | Microsoft-Windows-Security-Auditing |
+| Permissions on an object were changed | 4670(S)  | Information | Security | Microsoft-Windows-Security-Auditing |
 | Security-enabled Group Created | 4731 | Information | Security | Microsoft-Windows-Security-Auditing |
 | Security-Enabled group Modification | 4735 | Information | Security | Microsoft-Windows-Security-Auditing |
 | SID History add attempted on Account | 4766 | Information | Security | Microsoft-Windows-Security-Auditing |

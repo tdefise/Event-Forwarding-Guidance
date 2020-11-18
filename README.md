@@ -14,7 +14,8 @@ The repository contains:
 Security Monitoring recommendation are available from [Microsoft](https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4697#security-monitoring-recommendations)
 * Added Event ID 4768, as recommended to detect MITTRE ATT&CK Technique [T1558.004 - Steal or Forge Kerberos Tickets: AS-REP Roasting](https://attack.mitre.org/techniques/T1558/004/).<BR>
 Security Monitoring recommendation are available from [Microsoft](https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4768#security-monitoring-recommendations)
-
+* Added Event ID 4738(S) & [T1098 - Account Manipulation](https://attack.mitre.org/techniques/T1098/).<BR>
+Security Monitoring recommendation are available from [Microsoft](https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4738)
 
 
 ## Links
