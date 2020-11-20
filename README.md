@@ -16,7 +16,41 @@ Security Monitoring recommendation are available from [Microsoft](https://docs.m
 Security Monitoring recommendation are available from [Microsoft](https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4768#security-monitoring-recommendations)
 * Added Event ID 4738(S) & 4670(S) as recommended to detect MITTRE ATT&CK Technique [T1098 - Account Manipulation](https://attack.mitre.org/techniques/T1098/).<BR>
 Security Monitoring recommendation are available from [Microsoft](https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4738)
+* Added Event ID 4724 as recommended by [Microsoft](https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4724#security-monitoring-recommendations)
+* Added Event ID 
+* 
+#### Tips
 
+Here below are some tips that can either help you to:
+- Prevent **directly** threats
+- Increase your visibility
+
+The example are some tools that are free.
+Some of them can be bypass, but even if it will be bypass, the attacker will:
+- Have to see that's it is there
+- Search a way to bypass it
+- It will create logs that can be correlated with all the events you already gathered.
+- It will generate noise by the attackers.
+
+##### AppLocker
+
+[AppLocker](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview) helps you control which apps and files users can run. These include executable files, scripts, Windows Installer files, dynamic-link libraries (DLLs), packaged apps, and packaged app installers.
+
+When AppLocker policy enforcement is set to **Enforce rules**, rules are enforced for the rule collection and all events are audited.<br>
+When AppLocker policy enforcement is set to **Audit only**, rules are only evaluated but all events generated from that evaluation are written to the AppLocker log. 
+
+I would recommend to setup at least the audit log on your critical assets.
+
+##### Sysmon
+
+If you don't have an EDR (Endpoint Protection & Responce) that provides you more visibility on endpoint for detection and response, I would recomment to have a look at [Sysmon](https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon).
+
+Sysmon is a Windows system service and device driver that, once installed on a system, remains resident across system reboots to monitor and log system activity to the Windows event log. It provides detailed information about process creations, network connections, and changes to file creation time. By collecting the events it generates using Windows Event Collection or SIEM agents and subsequently analyzing them, you can identify malicious or anomalous activity and understand how intruders and malware operate on your network.
+
+Here are some configurations you can use as an example:
+- [SwiftOnSecurity](https://github.com/SwiftOnSecurity/sysmon-config)- [ionstrom](https://github.com/ion-storm)
+
+Note that it is pretty common to see Sigma rules that leverage Sysmon logs, and it there are a lot of resources for well used security solutions such as [QRadar](https://www.ibm.com/support/knowledgecenter/SS42VS_SHR/com.ibm.extensions.doc/r_sysmon_setup.html), [Splunk](https://splunkbase.splunk.com/app/1914/), Azure Sentinel, ... 
 
 ## Links
 

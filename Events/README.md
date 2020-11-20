@@ -11,6 +11,7 @@ Lockout events for domain accounts are generated on the domain controller wherea
 |   | ID | Level | Event Log | Event Source |
 | --- | --- | --- | --- | --- |
 | A user account was changed | 4738(S) | Information | Security | Microsoft-Windows-Security-Auditing |
+| An attempt was made to reset an account's password | 4724 | Information | Security | Microsoft-Windows-Security-Auditing |
 | Account Lockouts | 4740 | Information | Security | Microsoft-Windows-Security-Auditing |
 | Account Login with Explicit Credentials | 4648 | Information | Security | Microsoft-Windows-Security-Auditing |
 | Account Name Changed | 4781 | Information | Security | Microsoft-Windows-Security-Auditing |
@@ -146,6 +147,21 @@ Microsoft-Windows-USB-USBHUB3-Analytic is not an event log per se; it is a trace
 | --- | --- | --- | --- | --- |
 | New Device Information | 43 | Information | Microsoft-Windows-USB-USBHUB3-Analytic | Microsoft-Windows-USB-USBHUB3 |
 | New Mass Storage Installation | 400, 410 | Information | Microsoft-Windows-Kernel-PnP/Device Configuration | Microsoft-Windows-Kernel-PnP |
+
+Note that it may be possible that User Plug-n-Play Device Events maybe with Event ID 20001 and 20003
+
+### Windows Portable Devices
+
+Windows Portable Devices enables the operating system to communicate and coordinate with the attached devices which can be anyone of the following: Music Players, Storage Media, Mobile Phones, Cameras and many other portable devices that can be connected to the computer.
+
+|   | ID | Level | Event Log | Event Source |
+| --- | --- | --- | --- | --- |
+| | 24576
+| | 24577
+| | 24578
+| | 24579
+
+
 
 ### Group Policy Errors
 
