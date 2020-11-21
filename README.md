@@ -17,8 +17,7 @@ Security Monitoring recommendation are available from [Microsoft](https://docs.m
 * Added Event ID 4738(S) & 4670(S) as recommended to detect MITTRE ATT&CK Technique [T1098 - Account Manipulation](https://attack.mitre.org/techniques/T1098/).<BR>
 Security Monitoring recommendation are available from [Microsoft](https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4738)
 * Added Event ID 4724 as recommended by [Microsoft](https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4724#security-monitoring-recommendations)
-* Added Event ID 
-* 
+
 #### Tips
 
 Here below are some tips that can either help you to:
